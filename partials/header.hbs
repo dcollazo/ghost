@@ -1,0 +1,133 @@
+<header class="site-header {{#if @blog.cover}}site-cover{{/if}}" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    {{#if @blog.logo}}
+    <img alt="{{@blog.title}}" class="site-logo" src="{{@blog.logo}}">
+    {{/if}}
+    <div class="header_wrapper">
+      <ul class="icon_list">
+        <li>
+          <a href="/ruby" class="ruby">
+            <span><img src="/assets/images/ruby.png" alt="Ruby"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/chef" class="chef">
+            <span><img src="/assets/images/chef.png" alt="Chef"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/rails" class="rails">
+            <span><img src="/assets/images/rails.png" alt="Rails"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/c" class="c">
+            <span><img src="/assets/images/c.png" alt="C"></span>
+          </a>
+        </li>
+
+         <li>
+          <a href="/linux" class="debian">
+            <span><img src="/assets/images/debian.png" alt="Debian"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/python" class="python">
+            <span><img src="/assets/images/python.png" alt="Python"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/algorithms" class="algorithms">
+            <span><img src="/assets/images/algorithms.png" alt="algorithms"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/vim" class="vim">
+            <span><img src="/assets/images/vim.png" alt="Vim"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/nginx" class="nginx">
+            <span><img src="/assets/images/nginx.png" alt="Nginx"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/mysql" class="mysql">
+            <span><img src="/assets/images/mysql.png" alt="Mysql"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/databases" class="databases">
+            <span><img src="/assets/images/databases.png" alt="Databases"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/postgresql" class="postgresql">
+            <span><img src="/assets/images/postgresql.png" alt="Postgresql"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/markdown" class="markdown">
+            <span><img src="/assets/images/markdown.png" alt="Markdown"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/javascript" class="javascript">
+            <span><img src="/assets/images/javascript.png" alt="Javascript"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/html" class="html">
+            <span><img src="/assets/images/html.png" alt="HTML"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/java" class="java">
+            <span><img src="/assets/images/java.png" alt="Java"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/android" class="android">
+            <span><img src="/assets/images/android.png" alt="Android"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/jquery" class="jquery">
+            <span><img src="/assets/images/jquery.png" alt="jQuery"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/rspec" class="rspec">
+            <span><img src="/assets/images/rspec.png" alt="RSpec"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/regex" class="regex">
+            <span><img src="/assets/images/regex.png" alt="regex"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/datastructures" class="data_structures">
+            <span><img src="/assets/images/data_structures.png" alt="DataStructures"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/sicp" class="sicp">
+            <span><img src="/assets/images/sicp.png" alt="SICP"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/sublimetext" class="sublime">
+            <span><img src="/assets/images/sublime.png" alt="Sublime"></span>
+          </a>
+        </li>
+      </ul>
+
+        {{#if @blog.description}}<h2 class="site-description">{{@blog.description}}</h2>{{/if}}
+    </div>
+</header>

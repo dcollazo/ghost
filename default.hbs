@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="{{meta_description}}" name="description">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>{{meta_title}}</title>
+
+        <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:400,600|Source+Code+Pro" rel="stylesheet">
+        <link href="/assets/css/font-awesome.css" rel="stylesheet">
+        <link href="/assets/css/normalize.css" rel="stylesheet">
+        <link href="/assets/css/style.css" rel="stylesheet">
+        <link href="/assets/css/post.css" rel="stylesheet">
+        <link href="/assets/images/favicon.ico" rel="icon">
+        {{#if @blog.cover}}<link href="{{@blog.cover}}" rel="prefetch">{{/if}}
+        {{#if pagination.next}}<link href="{{pageUrl pagination.next}}" rel="prefetch">{{/if}}
+
+        {{ghost_head}}
+    </head>
+
+    <body class="{{body_class}}">
+        <header aria-hidden="true" class="site-sidebar hidden" role="banner">
+            <nav class="site-nav">
+                <a class="button fa fa-square" href="/">Home</a>
+                <a class="button fa fa-twitter-square" href="http://198.199.107.93/ghost/">Twitter</a>
+                <a class="button fa fa-rss-square" href="{{@davidcollazo.com}}/rss">RSS</a>
+            </nav>
+        </header>
+
+        <a class="site-sidebar-toggle fa fa-bars" href="/"><span class="alt">Menu</span></a>
+
+        <div class="site-container" id="skrollr-body">
+            {{{body}}}
+        </div>
+
+        {{ghost_foot}}
+
+        <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+    </body>
+</html>
